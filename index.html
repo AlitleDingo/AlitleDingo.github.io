@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name | Home</title>
+    <title>A little Dingo | Home</title>
     <meta
       name="description"
       content="Personal homepage template with a 'What I Do' section and links to apps."
     />
     <style>
       :root {
-        --bg: #0b1020;
-        --panel: #121a2b;
-        --panel-alt: #1b263f;
-        --primary: #7c9cff;
-        --secondary: #8ae9c1;
-        --text: #edf3ff;
+        --bg: #f6f6f7;
+        --panel: #c4c095;
+        --panel-alt: #2f3525;
+        --primary: #080808;
+        --secondary: #e9e5b4;
+        --text: #202020;
         --muted: #b7c0d8;
         --border: rgba(255, 255, 255, 0.08);
         --shadow: 0 20px 45px rgba(10, 16, 30, 0.35);
@@ -32,7 +32,7 @@
       body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(135deg, #0b1020 0%, #111b2d 100%);
+        background: linear-gradient(135deg, #e5e8f0 0%, #ecf3c2 100%);
         color: var(--text);
         line-height: 1.6;
       }
@@ -52,7 +52,7 @@
         top: 0;
         z-index: 10;
         backdrop-filter: blur(10px);
-        background: rgba(11, 16, 32, 0.7);
+        background: rgba(65, 113, 216, 0.7);
         border-bottom: 1px solid var(--border);
       }
 
@@ -97,7 +97,7 @@
         border: 1px solid var(--border);
         border-radius: 999px;
         color: var(--secondary);
-        background: rgba(138, 233, 193, 0.06);
+        background: rgba(0, 0, 0, 0.06);
         font-size: 0.8rem;
         letter-spacing: 0.08em;
         text-transform: uppercase;
@@ -138,20 +138,21 @@
       }
 
       .button.primary {
-        background: linear-gradient(135deg, var(--primary), #9dc8ff);
-        color: #08111d;
+        background-color: #9dc8ff;
+        color: #000000;
         box-shadow: var(--shadow);
       }
 
       .button.secondary {
         border: 1px solid var(--border);
-        background: rgba(255, 255, 255, 0.02);
+        background: rgba(82, 119, 240, 0.02);
         color: var(--text);
       }
 
       .hero-card {
-        background: linear-gradient(180deg, rgba(27, 38, 63, 0.9), rgba(18, 26, 43, 0.9));
+        background: linear-gradient(180deg, rgba(65, 113, 216, 0.7), rgba(18, 65, 167, 0.7));
         border: 1px solid var(--border);
+        border-color: #000000;
         border-radius: 24px;
         padding: 26px;
         box-shadow: var(--shadow);
@@ -174,7 +175,7 @@
       .stat {
         padding: 18px 16px;
         border-radius: 16px;
-        background: rgba(255, 255, 255, 0.02);
+        background: rgba(10, 10, 10, 0.02);
         border: 1px solid var(--border);
       }
 
@@ -211,7 +212,7 @@
       }
 
       .service-card {
-        background: rgba(18, 26, 43, 0.9);
+        background: rgba(255, 255, 229, 0.7);
         border: 1px solid var(--border);
         border-radius: 20px;
         padding: 24px;
@@ -224,7 +225,7 @@
         width: 52px;
         height: 52px;
         border-radius: 14px;
-        background: rgba(124, 156, 255, 0.12);
+        background: rgba(5, 102, 55, 0.12);
         color: var(--primary);
         font-size: 1.4rem;
         margin-bottom: 18px;
@@ -250,8 +251,8 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        background: linear-gradient(180deg, rgba(27, 38, 63, 0.9), rgba(18, 26, 43, 0.9));
-        border: 1px solid var(--border);
+        background: linear-gradient(180deg, rgba(65, 113, 216, 0.7), rgba(198, 230, 190, 0.9));
+        border: 10px solid var(--border);
         border-radius: 18px;
         padding: 22px;
         transition: transform 0.2s ease, border-color 0.2s ease;
@@ -259,7 +260,7 @@
 
       .app-card:hover {
         transform: translateY(-4px);
-        border-color: rgba(124, 156, 255, 0.45);
+        border-color: rgba(0, 0, 0, 0.45);
       }
 
       .app-badge {
@@ -425,38 +426,25 @@
           </div>
 
           <div class="apps-grid">
+
             <article class="app-card">
-              <span class="app-badge">Web App</span>
-              <h3>App One</h3>
+              <span class="app-badge">tool</span>
+              <h3>markpad</h3>
               <p>
-                A clean product for organizing tasks, tracking progress, and helping users
-                stay focused.
+                A eligent modern marktext editor that lives in the web built with claude sonet 5.5
               </p>
-              <a class="app-link" href="https://your-app-one.com" target="_blank" rel="noreferrer">
+              <a class="app-link" href="https://markpadd.netlify.app" target="_blank" rel="noreferrer">
                 Open App →
               </a>
             </article>
 
             <article class="app-card">
-              <span class="app-badge">Tool</span>
-              <h3>App Two</h3>
+              <span class="app-badge">fun</span>
+              <h3>atrium</h3>
               <p>
-                A practical utility designed to save time, reduce friction, and simplify a
-                common workflow.
+                A cave exploration game built in the godot engine. 
               </p>
-              <a class="app-link" href="https://your-app-two.com" target="_blank" rel="noreferrer">
-                Open App →
-              </a>
-            </article>
-
-            <article class="app-card">
-              <span class="app-badge">Portfolio</span>
-              <h3>App Three</h3>
-              <p>
-                A custom experience built to showcase ideas, content, or services in a modern,
-                engaging way.
-              </p>
-              <a class="app-link" href="https://your-app-three.com" target="_blank" rel="noreferrer">
+              <a class="app-link" href="" target="_blank" rel="noreferrer">
                 Open App →
               </a>
             </article>
@@ -464,14 +452,5 @@
         </div>
       </section>
     </main>
-
-    <footer id="contact">
-      <div class="container">
-        <p>
-          Let’s build something useful together.<br />
-          Email: <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
-        </p>
-      </div>
-    </footer>
   </body>
 </html>
