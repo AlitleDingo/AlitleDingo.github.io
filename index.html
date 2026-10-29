@@ -10,8 +10,8 @@
     />
     <style>
       :root {
-        --bg: #f6f6f7;
-        --panel: #c4c095;
+        --bg: #d8d7d7;
+        --panel: #727272;
         --panel-alt: #2f3525;
         --primary: #080808;
         --secondary: #e9e5b4;
@@ -32,7 +32,7 @@
       body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(135deg, #e5e8f0 0%, #ecf3c2 100%);
+        background: linear-gradient(135deg, #111111 0%, #161616 100%);
         color: var(--text);
         line-height: 1.6;
       }
@@ -52,7 +52,7 @@
         top: 0;
         z-index: 10;
         backdrop-filter: blur(10px);
-        background: rgba(65, 113, 216, 0.7);
+        background: rgba(135, 159, 211, 0.7);
         border-bottom: 1px solid var(--border);
       }
 
@@ -67,6 +67,10 @@
         font-size: 1.2rem;
         font-weight: 700;
         letter-spacing: 0.04em;
+      }
+
+      .span {
+        color: #9dc8ff;
       }
 
       .nav-links {
@@ -90,24 +94,12 @@
         gap: 40px;
         align-items: center;
       }
-
-      .eyebrow {
-        display: inline-block;
-        padding: 8px 12px;
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        color: var(--secondary);
-        background: rgba(0, 0, 0, 0.06);
-        font-size: 0.8rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-
       h1 {
         font-size: clamp(2.5rem, 6vw, 5rem);
         line-height: 1.05;
         letter-spacing: -0.05em;
         margin: 16px 0 16px;
+        color: #dadada;
       }
 
       .lead {
@@ -150,7 +142,7 @@
       }
 
       .hero-card {
-        background: linear-gradient(180deg, rgba(65, 113, 216, 0.7), rgba(18, 65, 167, 0.7));
+        background: linear-gradient(180deg, rgba(92, 92, 92, 0.7), rgba(36, 36, 36, 0.7));
         border: 1px solid var(--border);
         border-color: #000000;
         border-radius: 24px;
@@ -197,6 +189,7 @@
         margin: 0 0 10px;
         font-size: clamp(2rem, 4vw, 3rem);
         letter-spacing: -0.04em;
+        color: #969faa;
       }
 
       .section-header p {
@@ -212,7 +205,7 @@
       }
 
       .service-card {
-        background: rgba(255, 255, 229, 0.7);
+        background: rgba(143, 143, 141, 0.822);
         border: 1px solid var(--border);
         border-radius: 20px;
         padding: 24px;
@@ -251,8 +244,8 @@
         display: flex;
         flex-direction: column;
         height: 100%;
-        background: linear-gradient(180deg, rgba(65, 113, 216, 0.7), rgba(198, 230, 190, 0.9));
-        border: 10px solid var(--border);
+        background: linear-gradient(180deg, rgba(101, 101, 102, 0.7), rgba(25, 26, 25, 0.9));
+        border: 1px solid var(--border);
         border-radius: 18px;
         padding: 22px;
         transition: transform 0.2s ease, border-color 0.2s ease;
@@ -291,7 +284,7 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        color: var(--primary);
+        color:cyan;
         font-weight: 700;
       }
 
@@ -322,7 +315,7 @@
     <header>
       <div class="container">
         <nav>
-          <div class="brand">YOUR NAME</div>
+          <div class="brand">A Little Dingo</div>
           <div class="nav-links">
             <a href="#about">About</a>
             <a href="#what-i-do">What I Do</a>
@@ -337,37 +330,30 @@
       <section class="hero" id="about">
         <div class="container hero-grid">
           <div>
-            <span class="eyebrow">Builder • Creator • Problem Solver</span>
-            <h1>I build digital products people actually use.</h1>
+            <h1>Code for the fun of it</h1>
             <p class="lead">
-              I design and develop apps, tools, and experiences that help people work
-              smarter, move faster, and enjoy the process. I focus on clean design,
-              useful features, and products that feel effortless to use.
+              In a world where AI can code better than me, it can be tempting to just sit back and let the ai do it all. While i am not anti ai (i have used ai before to creat apps), i belleive that we should
+              creat code, art, and games for the fun of it
             </p>
-            <div class="cta-row">
-              <a class="button primary" href="#apps">View My Apps</a>
-              <a class="button secondary" href="#contact">Let’s Talk</a>
-            </div>
           </div>
-
           <div class="hero-card">
-            <div class="mini-label">Quick info</div>
+            <div class="mini-label">About Me</div>
             <div class="stat-grid">
               <div class="stat">
-                <strong>3+</strong>
-                <span>Years building</span>
+                <strong>3</strong>
+                <span class="span">Years coding</span>
               </div>
               <div class="stat">
-                <strong>10+</strong>
-                <span>Projects launched</span>
+                <strong>Free</strong>
+                <span class="span">Everything that is worth publishing is open source</span>
               </div>
               <div class="stat">
-                <strong>5</strong>
-                <span>Core skills</span>
+                <strong>Web and Game</strong>
+                <span class="span">I work with webapps and the Godot Engine</span>
               </div>
               <div class="stat">
-                <strong>24/7</strong>
-                <span>Ideas in motion</span>
+                <strong>Student</strong>
+                <span class="span">an active Highshool student</span>
               </div>
             </div>
           </div>
@@ -379,36 +365,33 @@
           <div class="section-header">
             <h2>What I Do</h2>
             <p>
-              I create practical, modern digital experiences across web, product design,
-              and custom tools that solve real problems.
+              I Creat Games and Webapps for the fun of coding
             </p>
           </div>
 
           <div class="services-grid">
             <article class="service-card">
-              <div class="icon">⚙️</div>
-              <h3>App Development</h3>
+              <h3>Current Work</h3>
               <p>
-                I build fast, responsive apps that make everyday tasks easier and more
-                enjoyable for users.
+                Cave exploration game in the Godot Engine called Atrium
               </p>
             </article>
 
             <article class="service-card">
-              <div class="icon">🎨</div>
-              <h3>UI / UX Design</h3>
-              <p>
-                I design clean interfaces, smooth flows, and clear experiences that help
-                people understand and use products confidently.
-              </p>
+              <h3>Programing Laniudges Known</h3>
+              <ul style="color: #dadada;">
+                <li>Python</li>
+                <li>GDscript</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
             </article>
 
             <article class="service-card">
-              <div class="icon">🚀</div>
-              <h3>Product Strategy</h3>
+              <h3>Coding is fun</h3>
               <p>
-                I turn ideas into focused product decisions, helping new tools reach the
-                right audience with a clear user value.
+                Coding is one of the funest things to do
               </p>
             </article>
           </div>
@@ -418,17 +401,15 @@
       <section class="section" id="apps">
         <div class="container">
           <div class="section-header">
-            <h2>My Apps</h2>
+            <h2>Some of my webapps</h2>
             <p>
-              A few examples of the things I’ve built and the ideas I’m continuing to
-              improve.
+              Some webapps that i have built
             </p>
           </div>
 
           <div class="apps-grid">
 
             <article class="app-card">
-              <span class="app-badge">tool</span>
               <h3>markpad</h3>
               <p>
                 A eligent modern marktext editor that lives in the web built with claude sonet 5.5
@@ -439,14 +420,10 @@
             </article>
 
             <article class="app-card">
-              <span class="app-badge">fun</span>
               <h3>atrium</h3>
               <p>
-                A cave exploration game built in the godot engine. 
+                A cave exploration game built in the godot engine. Soon to be published on the web. all assets hand crafted
               </p>
-              <a class="app-link" href="" target="_blank" rel="noreferrer">
-                Open App →
-              </a>
             </article>
           </div>
         </div>
